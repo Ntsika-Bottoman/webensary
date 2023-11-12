@@ -1,0 +1,30 @@
+// Star Ratings
+.fiveStars {
+  opacity: 1;
+}
+.fourStars {
+  img:nth-child(5) {
+    opacity: 0.5;
+  }
+}
+.threeStars {
+  img:nth-child(5),
+  img:nth-child(4) {
+    opacity: 0.5;
+  }
+}
+.twoStars {
+  img:nth-child(5),
+  img:nth-child(4),
+  img:nth-child(3) {
+    opacity: 0.5;
+  }
+}
+.oneStar {
+  img:nth-child(5),
+  img:nth-child(4),
+  img:nth-child(3),
+  img:nth-child(2) {
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,19 @@
+// CSS Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: $siteFont;
+}
+// Main grid container
+.container {
+  max-width: 960px;
+  display: grid;
+  grid-template-columns: 31% 31% 31%;
+  grid-row-gap: 40px;
+  grid-column-gap: 28px;
+  margin: 0 auto;
+  padding: 64px;
+}

@@ -1,0 +1,40 @@
+// Media Queries
+@media (max-width: 760px) {
+  // Adjust two columns
+  .container {
+    grid-template-columns: 45% 45%;
+    grid-column-gap: 48px;
+  }
+}
+
+@media (max-width: 560px) {
+  // Adjust single column
+  .container {
+    grid-template-columns: 100%;
+    padding: 42px;
+    grid-gap: 60px;
+    .cart-icon {
+      height: 80px !important;
+      width: 80px !important;
+      .cart-text {
+        font-size: 12px !important;
+      }
+    }
+    .button {
+      font-size: 15px !important;
+    }
+    .title {
+      font-size: 18px;
+      color: #5c5c5c;
+      margin-bottom: 5px;
+    }
+    .price {
+      font-size: 18px;
+      color: #868686;
+      margin-bottom: 5px;
+    }
+    .star {
+      width: 11px;
+    }
+  }
+}

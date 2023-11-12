@@ -1,0 +1,9 @@
+// Importing Open Sans font family from google fonts
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+// Importing all SCSS styles
+@import "./variables";
+@import "./body";
+@import "./card";
+@import "./ratings";
+@import "./responsive";

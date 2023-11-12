@@ -1,0 +1,27 @@
+// Variables for main styles
+$siteFont: "Open Sans", sans-serif;
+$cardTitleColor: #5c5c5c;
+$cardPriceColor: #868686;
+$btnColor: #3dd187;
+$btnTextColor: white;
+$btnHoverColor: #3abe7c;
+
+// Mixin for flex center
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+// Scale animation for cart icon
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, -50%) scale(0.3);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}

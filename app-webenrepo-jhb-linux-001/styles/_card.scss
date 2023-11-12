@@ -1,0 +1,95 @@
+// Card styling
+.card {
+  @include flexCenter();
+  flex-direction: column;
+  padding: 15px 10px;
+  box-shadow: rgba(0, 0, 0, 0.144) 0px 0px 5px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  // Thumbnail styling
+  .image {
+    position: relative;
+    .cart-icon {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(-50%, -50%);
+      width: 60px;
+      height: 60px;
+      border-radius: 50px;
+      background-color: red;
+      animation: bounce 0.2s 1 ease;
+      .cart-text {
+        position: absolute;
+        font-size: 9px;
+        color: white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .thumbnail {
+      width: 100%;
+      transition: all 0.3s ease;
+    }
+    // Button styling
+    .button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 12px;
+      text-decoration: none;
+      border: none;
+      outline: none;
+      color: $btnTextColor;
+      background-color: $btnColor;
+      padding: 10px 15px;
+      border-radius: 2px;
+      z-index: 2;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      // Button hover state
+      &:hover {
+        background-color: $btnHoverColor;
+      }
+    }
+    .show-btn {
+      display: none;
+    }
+  }
+  // Card line
+  .line {
+    width: 100%;
+    border-top: 1px solid #e3e3e3;
+    margin: 10px 0;
+  }
+  // Card title
+  .title {
+    font-size: 13px;
+    margin-bottom: 3px;
+    color: $cardTitleColor;
+  }
+  // Card price
+  .price {
+    font-size: 13px;
+    color: $cardPriceColor;
+  }
+  // Card stars
+  .star {
+    width: 8px;
+  }
+  // Card hover states
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.144) 0px 0px 15px;
+    .show-btn {
+      display: inline-block;
+    }
+    .thumbnail {
+      opacity: 0.5;
+    }
+  }
+}
